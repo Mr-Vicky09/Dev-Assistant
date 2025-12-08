@@ -1,0 +1,76 @@
+You are my expert development assistant. Build a fully customized, animated developer portfolio for me using:
+
+- Next.js (latest stable version)
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- Three.js (for 3D visuals or reactive objects)
+- Barba.js (for page transition smoothness)
+
+Brand + Theme:
+- Style: Gen-Z dark rave aesthetic
+- Visual mood: neon glitch, cyberpunk energy, rave strobe accents, smooth motion — not chaotic
+- Typography: bold, experimental, glitch-style elements but readable
+- Color palette: #0a0a0f, #9d00ff, #00f0ff, #ffffff with glow effects
+- Cursor: custom neon reactive cursor with trailing effect
+
+Content Identity:
+- Name: **Vicky**
+- Role: **Data Analyst**
+- Portfolio tone: confident, modern, slightly rebellious tech tone (not corporate boring)
+- Voice: short, punchy text, minimal wording, high visual impact.
+
+Required Sections:
+
+1. **Hero / Landing**
+   - Animated headline: "VICKY — DATA ANALYST"
+   - Sub text: "Turning raw chaos into clean insights."
+   - Interactive 3D element using Three.js (choose one):
+     - hologram rotating cube with data grid texture
+     - particle sphere reacting to cursor
+   - Button with smooth hover distortion + scroll CTA.
+
+2. **About**
+   - Short bio component with motion reveal
+   - Skills list with micro-interaction hover effects (bar graphs or neon icons)
+
+3. **Experience**
+   - Animated timeline using Framer + Barba.js transitions
+   - Hover reveals details (no clutter)
+
+4. **Projects**
+   - Interactive project cards with:
+     - Tilt interaction
+     - Glow border animation
+     - Click → opens modal or separate page with transition animation
+
+5. **Contact**
+   - Neon contact form
+   - Functional email handling
+   - Animated social icons (LinkedIn, GitHub, etc.)
+
+6. **Reusables**
+   - Animated button components (glitch effect)
+   - Floating navbar with scroll behavior
+   - Global smooth transition system via Barba.js
+   - Dark rave custom mouse cursor with trailing effect.
+
+Technical Requirements:
+- Code must be modular, clean, and scalable.
+- Use a proper folder structure: `/app`, `/components`, `/hooks`, `/styles`, `/data`, `/lib`.
+- Optimize animations for performance.
+- Fine control easing/timing for smooth motion, not jerky movement.
+
+Deliverables in this order:
+1. Full project setup commands and dependencies.
+2. File and folder architecture with explanation.
+3. Complete code generation for:
+   - Layouts
+   - Pages
+   - Components
+   - Animations
+   - Theme styling
+   - Three.js asset
+4. Instructions to run locally and deploy on Replit hosting.
+5. Optional upgrade suggestions (AI chatbot, audio-reactive visuals, theme toggle).
+
