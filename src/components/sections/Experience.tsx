@@ -92,29 +92,33 @@ export default function Experience() {
                         : "none",
                   }}
                 >
-                  <div
-                    className={`flex items-center gap-2 mb-2 ${
-                      index % 2 === 0 ? "md:justify-end" : ""
-                    }`}
-                  >
-                    <FiBriefcase className="text-[#9d00ff]" />
-                    <span className="text-[#00f0ff] font-medium">
-                      {exp.company}
-                    </span>
-                  </div>
+                  {exp.company && (
+                    <div
+                      className={`flex items-center gap-2 mb-2 ${
+                        index % 2 === 0 ? "md:justify-end" : ""
+                      }`}
+                    >
+                      <FiBriefcase className="text-[#9d00ff]" />
+                      <span className="text-[#00f0ff] font-medium">
+                        {exp.company}
+                      </span>
+                    </div>
+                  )}
 
                   <h3 className="text-xl font-bold text-white mb-2">
                     {exp.role}
                   </h3>
 
-                  <div
-                    className={`flex items-center gap-2 text-gray-400 text-sm mb-4 ${
-                      index % 2 === 0 ? "md:justify-end" : ""
-                    }`}
-                  >
-                    <FiCalendar />
-                    <span>{exp.period}</span>
-                  </div>
+                  {exp.period && (
+                    <div
+                      className={`flex items-center gap-2 text-gray-400 text-sm mb-4 ${
+                        index % 2 === 0 ? "md:justify-end" : ""
+                      }`}
+                    >
+                      <FiCalendar />
+                      <span>{exp.period}</span>
+                    </div>
+                  )}
 
                   <p className="text-gray-300 mb-4">{exp.description}</p>
 

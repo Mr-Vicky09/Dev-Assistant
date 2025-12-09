@@ -3,11 +3,13 @@ export const personalInfo = {
   role: "Data Analyst",
   tagline: "Turning raw chaos into clean insights.",
   bio: "I transform messy datasets into actionable intelligence. With a passion for uncovering hidden patterns and a knack for visual storytelling, I help organizations make data-driven decisions that actually matter.",
-  email: "hello@vicky.dev",
-  location: "Digital Realm",
+  email: "ranjitnirsaphy@gmail.com",
+  phone: "+91 7488726918",
+  location: "PATNA ,BIHAR",
 };
 
 export const skills = [
+  { name: "Excel", level: 95, icon: "EXCEL" },
   { name: "Python", level: 95, icon: "python" },
   { name: "SQL", level: 90, icon: "database" },
   { name: "Tableau", level: 88, icon: "chart" },
@@ -21,25 +23,25 @@ export const skills = [
 export const experiences = [
   {
     id: 1,
-    role: "Senior Data Analyst",
-    company: "TechCorp Industries",
-    period: "2022 - Present",
+    role: "Data Analyst",
+    company: "",
+    period: "freshers",
     description: "Leading data analytics initiatives, building predictive models, and creating executive dashboards that drive million-dollar decisions.",
     highlights: ["40% increase in forecast accuracy", "Built real-time analytics pipeline", "Mentored junior analysts"],
   },
   {
     id: 2,
     role: "Data Analyst",
-    company: "DataFlow Solutions",
-    period: "2020 - 2022",
+    company: "",
+    period: "",
     description: "Developed automated reporting systems and conducted deep-dive analyses for client optimization projects.",
     highlights: ["Automated 80% of manual reports", "Saved 200+ hours monthly", "Client satisfaction 98%"],
   },
   {
     id: 3,
     role: "Junior Analyst",
-    company: "StartupXYZ",
-    period: "2018 - 2020",
+    company: "",
+    period: "",
     description: "Started my journey crunching numbers and discovering the beauty in data patterns.",
     highlights: ["First ML model deployment", "Database optimization", "A/B testing frameworks"],
   },
@@ -85,8 +87,7 @@ export const projects = [
 ];
 
 export const socialLinks = [
-  { name: "GitHub", url: "https://github.com", icon: "github" },
-  { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-  { name: "Twitter", url: "https://twitter.com", icon: "twitter" },
-  { name: "Email", url: "mailto:hello@vicky.dev", icon: "email" },
+  { name: "GitHub", url: "https://github.com/Mr-Vicky09/Dev-Assistant?tab=readme-ov-file", icon: "github" },
+  { name: "LinkedIn", url: "https://lnkd.in/drbnhFht", icon: "linkedin" },
+  { name: "Email", url: "mailto:ranjitnirsaphy@gmail.com", icon: "email" },
 ];

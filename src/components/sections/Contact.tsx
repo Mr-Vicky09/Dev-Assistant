@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { socialLinks, personalInfo } from "@/data/portfolio";
 import GlitchButton from "@/components/ui/GlitchButton";
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiSend } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiSend, FiPhone } from "react-icons/fi";
 
 const iconMap: { [key: string]: React.ReactNode } = {
   github: <FiGithub size={24} />,
@@ -20,6 +20,7 @@ export default function Contact() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -33,7 +34,7 @@ export default function Contact() {
     
     setSubmitted(true);
     setIsSubmitting(false);
-    setFormState({ name: "", email: "", message: "" });
+    setFormState({ name: "", email: "", phone: "", message: "" });
     
     setTimeout(() => setSubmitted(false), 3000);
   };
@@ -114,6 +115,20 @@ export default function Contact() {
               </div>
 
               <div>
+                <label className="block text-sm text-gray-400 mb-2">Phone</label>
+                <input
+                  type="tel"
+                  value={formState.phone}
+                  onChange={(e) =>
+                    setFormState({ ...formState, phone: e.target.value })
+                  }
+                  className="w-full px-4 py-3 rounded-lg text-white focus:outline-none focus:border-[#00f0ff] cursor-hover"
+                  style={inputStyles}
+                  placeholder="+1 (555) 123-4567"
+                />
+              </div>
+
+              <div>
                 <label className="block text-sm text-gray-400 mb-2">
                   Message
                 </label>
@@ -181,9 +196,15 @@ export default function Contact() {
                 I&apos;m always open to discussing new projects, creative ideas, or
                 opportunities to be part of your vision.
               </p>
-              <div className="flex items-center gap-3 text-gray-300">
-                <FiMail className="text-[#9d00ff]" />
-                <span>{personalInfo.email}</span>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 text-gray-300">
+                  <FiMail className="text-[#9d00ff]" />
+                  <span>{personalInfo.email}</span>
+                </div>
+                <div className="flex items-center gap-3 text-gray-300">
+                  <FiPhone className="text-[#9d00ff]" />
+                  <span>{personalInfo.phone}</span>
+                </div>
               </div>
             </div>
 
